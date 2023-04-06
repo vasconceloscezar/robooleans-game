@@ -9,49 +9,6 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 import { arenaState, botsState } from './states/gameState';
 import Bot from './game/bots';
 
-const defaultBots = [
-  {
-    name: 'Bot 1',
-    booleanValue: true,
-    operation: 'AND',
-    speed: 1,
-    direction: 'UP',
-    position: { x: 4, y: 0 },
-    wins: 0,
-    losses: 0,
-  },
-  {
-    name: 'Bot 2',
-    booleanValue: false,
-    operation: 'OR',
-    speed: 1,
-    direction: 'RIGHT',
-    position: { x: 0, y: 4 },
-    wins: 0,
-    losses: 0,
-  },
-  {
-    name: 'Bot 3',
-    booleanValue: true,
-    operation: 'AND',
-    speed: 1,
-    direction: 'DOWN',
-    position: { x: 2, y: 2 },
-    wins: 0,
-    losses: 0,
-  },
-  {
-    name: 'Bot 4',
-    booleanValue: false,
-    operation: 'OR',
-    speed: 1,
-    direction: 'LEFT',
-    position: { x: 3, y: 1 },
-    wins: 0,
-    losses: 0,
-  },
-];
-
 function App() {
   const [bots, setBots] = useRecoilState(botsState);
   const handleStartBattle = () => {
