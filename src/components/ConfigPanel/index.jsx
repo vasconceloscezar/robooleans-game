@@ -8,7 +8,7 @@ const BotPanel = ({ index }) => {
   const [direction, setDirection] = useState('North');
 
   return (
-    <div className="space-y-2 rounded-lg border bg-white p-4 shadow-md">
+    <div className="bg-slate space-y-2 rounded-lg border p-4 text-black shadow-md">
       <h3 className="text-xl font-semibold">Bot {index + 1}</h3>
       <div className="flex items-center">
         <label htmlFor={`botName${index}`} className="w-32">
@@ -86,7 +86,7 @@ const BotPanel = ({ index }) => {
   );
 };
 
-const ConfigurationPanel = () => {
+const ConfigPanel = () => {
   return (
     <div className="flex flex-wrap justify-between">
       {[0, 1, 2, 3].map((index) => (
@@ -96,4 +96,4 @@ const ConfigurationPanel = () => {
   );
 };
 
-export default ConfigurationPanel;
+export default ConfigPanel;

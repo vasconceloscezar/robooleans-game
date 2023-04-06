@@ -1,7 +1,16 @@
 import React from 'react';
 
-function LogPanel() {
-  return <div className="flex h-screen w-full items-center justify-center">LogPanel</div>;
-}
+const LogPanel = ({ logs }) => {
+  return (
+    <div className="mt-4">
+      <h2 className="mb-4 text-2xl font-semibold">Log Panel</h2>
+      <div className="rounded-md bg-gray-100 p-4 text-black shadow-md">
+        {logs.map((log, index) => (
+          <p key={index}>{log}</p>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default LogPanel;
