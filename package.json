@@ -17,6 +17,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
     "commitizen": "^4.3.0",
     "eslint": "^8.37.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -28,7 +29,11 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
+    "postcss": "^8.4.21",
+    "postcss-sorting": "^8.0.2",
     "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "tailwindcss": "^3.3.1",
     "vite": "^4.2.0"
   },
   "lint-staged": {
