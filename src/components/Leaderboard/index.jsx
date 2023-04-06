@@ -4,7 +4,7 @@ const Leaderboard = ({ bots }) => {
   return (
     <div className="mt-8">
       <h2 className="mb-4 text-2xl font-semibold">Leaderboard</h2>
-      <div className="rounded-md bg-gray-100 p-4 shadow-md">
+      <div className="rounded-md bg-gray-100 p-4 text-black shadow-md">
         <table className="w-full">
           <thead>
             <tr className="text-left">

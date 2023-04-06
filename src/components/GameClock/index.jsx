@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useRecoilState, useRecoilValue } from 'recoil';
+import { arenaState } from '../../states/gameState';
 
 const GameClock = () => {
   const [elapsedTime, setElapsedTime] = useState(0);
-
   useEffect(() => {
     const timer = setInterval(() => {
       setElapsedTime((prevTime) => prevTime + 1);

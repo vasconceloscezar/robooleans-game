@@ -8,7 +8,7 @@ export const botsState = atom({
 
 export const arenaState = atom({
   key: 'arenaState',
-  default: new Arena(8, 8),
+  default: new Arena(8, 8, []),
 });
 
 export const leaderboardState = selector({

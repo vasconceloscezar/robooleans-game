@@ -5,7 +5,7 @@ const BotPanel = ({ index }) => {
   const [booleanValue, setBooleanValue] = useState('0');
   const [booleanOperation, setBooleanOperation] = useState('AND');
   const [speed, setSpeed] = useState(1);
-  const [direction, setDirection] = useState('North');
+  const [direction, setDirection] = useState('UP');
 
   return (
     <div className="bg-slate space-y-2 rounded-lg border p-4 text-black shadow-md">
@@ -76,10 +76,10 @@ const BotPanel = ({ index }) => {
           onChange={(e) => setDirection(e.target.value)}
           className="w-full rounded-md border p-1"
         >
-          <option value="North">North</option>
-          <option value="South">South</option>
-          <option value="East">East</option>
-          <option value="West">West</option>
+          <option value="UP">Up</option>
+          <option value="DOWN">Down</option>
+          <option value="RIGHT">Right</option>
+          <option value="LEFT">Left</option>
         </select>
       </div>
     </div>
